@@ -114,6 +114,8 @@ class LoanController extends Controller {
       @ini_set('max_execution_time', 0);
       @set_time_limit(0);
 
+      // dd($request->all());
+
       $validator = Validator::make($request->all(), [
         'loan_id'                => 'required|unique:loans',
         'loan_product_id'        => 'required',
