@@ -207,7 +207,11 @@ class LoanCalculator {
             // dd($amount_to_pay);
 
             $interest = (pow((1 + (($this->interest_rate / 100) / 12)), $this->term)) - 1;
-            // dd($interest);
+            // dd($balance);
+            
+            // interest old
+            $interestt = (($this->interest_rate / 100) / 12) * $this->term * $balance;
+            // dd($interestt);
 
             $amount_to_pay = $amount_to_pay / $interest;
             // dd($amount_to_pay);
@@ -226,7 +230,7 @@ class LoanCalculator {
 
                 'principle_amount' => $principle_amount,
 
-                'interest'         => $interest,
+                'interest'         => $interestt,
 
                 'balance'          => $balance,
 
