@@ -202,18 +202,28 @@ class LoanCalculator {
         $data = array();
 
         for ($i = 0; $i < $this->term; $i++) {
+            dump($int);
+            
+            $a = 1 + ($int / 12);
+            dump($a);
 
-            $aa = pow((($int + 1) / 12), 12);
+            $aa = pow($a, 12);
+            dump($aa);
             // dd($aa); //2.0141723800043E-13
 
+            dump($balance);
+            
             $bb = ($balance * ($int / 12));
-            // dd($bb); // 20833.333333333
+            dump($bb); // 20833.333333333
 
             $cc = ($bb) * ($aa);
-            // dd($cc); //4.1961924583423E-9
+            dump($cc); //4.1961924583423E-9
 
-            $ad = pow((1 + ($int / 12)), 12-1);
-            // dd($ad);
+            $q = 1 + ($int / 12);
+            dump($q);
+
+            $ad = pow($q, 11);
+            dd($ad);
 
             $amount_to_pay       = $cc / $ad;
             dd($amount_to_pay);
