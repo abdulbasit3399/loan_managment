@@ -193,18 +193,32 @@ class LoanCalculator {
         // dd($balance);
 
         $penalty              = (($this->late_payment_penalties / 100) * $this->apply_amount); 
-        // dd($penalty);
+        // dd($this->interest_rate);
 
         $payable_amount       = 0;
-
-
+        $int = $this->interest_rate / 100;
+        // dd($int);
 
         $data = array();
 
         for ($i = 0; $i < $this->term; $i++) {
 
-            $amount_to_pay        = (($this->interest_rate / 100) * $balance) / 12;
-            // dd($amount_to_pay);
+            $aa = pow((($int + 1) / 12), 12);
+            // dd($aa); //2.0141723800043E-13
+
+            $bb = ($balance * ($int / 12));
+            // dd($bb); // 20833.333333333
+
+            $cc = ($bb) * ($aa);
+            // dd($cc); //4.1961924583423E-9
+
+            $ad = pow((1 + ($int / 12)), 12-1);
+            // dd($ad);
+
+            $amount_to_pay       = $cc / $ad;
+            dd($amount_to_pay);
+            // $amount_to_pay        = (($this->interest_rate / 100) * $balance) / 12;
+
 
             $interest = (pow((1 + (($this->interest_rate / 100) / 12)), $this->term)) - 1;
             // dd($balance);
