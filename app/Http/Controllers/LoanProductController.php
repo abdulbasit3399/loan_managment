@@ -90,8 +90,10 @@ class LoanProductController extends Controller {
 
         $loanproduct->save();
 
-        foreach($request->transaction_fee as $fee){
-            $loanproduct->transactionFee()->attach([$fee]);
+        if($request->transaction_fee){
+            foreach($request->transaction_fee as $fee){
+                $loanproduct->transactionFee()->attach([$fee]);
+            }
         }
 
         //Prefix Output

@@ -195,7 +195,7 @@ class LoanCalculator {
         $penalty              = (($this->late_payment_penalties / 100) * $this->apply_amount); 
         // dd($this->interest_rate);
 
-        $payable_amount       = 0;
+        $payable_amount = 0;
         $int = $this->interest_rate / 100;
         // dd($int);
 
@@ -247,33 +247,37 @@ class LoanCalculator {
             
             $payable_amount     = $payable_amount + $amount_to_pay;
 
+            $w = $balance * (($this->interest_rate / 100) / 12);
+
             $balance = $balance - $principle_amount;
             for ($i = 0; $i < $this->term; $i++) {
-                $w = $balance * (($this->interest_rate / 100) / 12);
-                $interest = $w;
-                dump($balance);
-                dd($interest);
 
-            $data[]  = array(
+                $data[]  = array(
 
-                'date'             => $date,
+                    'date'             => $date,
 
-                'amount_to_pay'    => $amount_to_pay,
+                    'amount_to_pay'    => $amount_to_pay,
 
-                'penalty'          => $penalty,
+                    'penalty'          => $penalty,
 
-                'principle_amount' => $principle_amount,
+                    'principle_amount' => $principle_amount,
 
-                'interest'         => $interest,
+                    'interest'         => $interest,
 
-                'balance'          => $balance,
+                    'balance'          => $balance,
 
-            );
+                );
+
+                $interest = ($balance * ($int/12));
+                $principle_amount = $amount_to_pay - $interest;
+                $balance = $balance - $principle_amount;
+            
+
+
 
             $date = date("Y-m-d", strtotime($this->term_period, strtotime($date)));
 
         }
-
         $this->payable_amount = ((($this->interest_rate / 100) * $this->apply_amount) * $this->term) + $this->apply_amount;
 
 

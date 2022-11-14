@@ -414,8 +414,8 @@
                           <td>Total</td>
                           <td></td>
                           <td class="text-right">{{decimalPlace($amount_to_pay, currency($loan->currency->name))}}</td>
-                          <td class="text-right">{{decimalPlace($principal_amount, currency($loan->currency->name))}}</td>
                           <td class="text-right">{{decimalPlace($interest, currency($loan->currency->name))}}</td>
+                          <td class="text-right">{{decimalPlace($principal_amount, currency($loan->currency->name))}}</td>
                           @php
                             foreach($transactionFees as $transactionFee):
                               if($loan->applied_amount >= $transactionFee->amount_from && $loan->applied_amount < $transactionFee->amount_to):
