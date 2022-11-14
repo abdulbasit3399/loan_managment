@@ -349,8 +349,11 @@
                            <th>{{ _lang("Date") }}</th>
                            <th class="text-right">{{ _lang("Amount to Pay") }}</th>
                            {{-- <th class="text-right">{{ _lang("Penalty") }}</th> --}}
-                           <th class="text-right">{{ _lang("Principal Amount") }}</th>
                            <th class="text-right">{{ _lang("Interest") }}</th>
+                           
+                           <th class="text-right">{{ _lang("Principal Amount") }}</th>
+                           <th class="text-right">{{ _lang("Loan Balance") }}</th>
+
                            @foreach($transactionFees as $transactionFee)
                            @if($loan->applied_amount >= $transactionFee->amount_from && $loan->applied_amount < $transactionFee->amount_to)
                               <th class="text-right">{{ $transactionFee->name}}</th>
@@ -379,12 +382,15 @@
                               {{ decimalPlace($repayment['penalty'], currency($loan->currency->name)) }}
                            </td> --}}
                            <td class="text-right">
-                              {{ decimalPlace($repayment['principal_amount'], currency($loan->currency->name)) }}
-                           </td>
-                           <td class="text-right">
                               {{ decimalPlace($repayment['interest'], currency($loan->currency->name)) }}
                            </td>
-
+                           <td class="text-right">
+                              {{ decimalPlace($repayment['principal_amount'], currency($loan->currency->name)) }}
+                           </td>
+                           
+                           <td class="text-right">
+                              {{ decimalPlace($repayment['balance'], currency($loan->currency->name)) }}
+                           </td>
                            @php
                             foreach($transactionFees as $transactionFee):
                               if($loan->applied_amount >= $transactionFee->amount_from && $loan->applied_amount < $transactionFee->amount_to):

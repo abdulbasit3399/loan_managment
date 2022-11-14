@@ -201,48 +201,58 @@ class LoanCalculator {
 
         $data = array();
 
-        for ($i = 0; $i < $this->term; $i++) {
-            dump($int);
+            // dump($int);
             
             $a = 1 + ($int / 12);
-            dump($a);
+            // dump($a);
 
-            $aa = pow($a, 12);
-            dump($aa);
+            $aa = pow($a, $this->term);
+            // dump($aa);
             // dd($aa); //2.0141723800043E-13
 
-            dump($balance);
+            // dump($balance);
             
             $bb = ($balance * ($int / 12));
-            dump($bb); // 20833.333333333
+            // dump($bb); // interest
 
             $cc = ($bb) * ($aa);
-            dump($cc); //4.1961924583423E-9
+            // dump($cc); //4.1961924583423E-9
 
             $q = 1 + ($int / 12);
-            dump($q);
+            // dump($q);
 
-            $ad = pow($q, 11);
-            dd($ad);
+            $ad = pow($q, $this->term);
+            $ad = $ad - 1;
+            // dd($ad);
 
             $amount_to_pay       = $cc / $ad;
-            dd($amount_to_pay);
+
+            // dd($amount_to_pay);
             // $amount_to_pay        = (($this->interest_rate / 100) * $balance) / 12;
 
-
-            $interest = (pow((1 + (($this->interest_rate / 100) / 12)), $this->term)) - 1;
+            // $interest = (pow((1 + (($this->interest_rate / 100) / 12)), $this->term)) - 1;
             // dd($balance);
             
+            $interest = $bb;
+            
             // interest old
-            $interestt = (($this->interest_rate / 100) / 12) * $this->term * $balance;
-            // dd($interestt);
-
-            $amount_to_pay = $amount_to_pay / $interest;
+            // $interestt = (($this->interest_rate / 100) / 12) * $this->term * $balance;
+            // dd($interest);
+            
+            $principle_amount = $amount_to_pay - $interest;
+            
+            // $amount_to_pay = $amount_to_pay / $interest;
             // dd($amount_to_pay);
-
+            // dd($principle_amount);
+            
             $payable_amount     = $payable_amount + $amount_to_pay;
 
             $balance = $balance - $principle_amount;
+            for ($i = 0; $i < $this->term; $i++) {
+                $w = $balance * (($this->interest_rate / 100) / 12);
+                $interest = $w;
+                dump($balance);
+                dd($interest);
 
             $data[]  = array(
 
@@ -254,13 +264,11 @@ class LoanCalculator {
 
                 'principle_amount' => $principle_amount,
 
-                'interest'         => $interestt,
+                'interest'         => $interest,
 
                 'balance'          => $balance,
 
             );
-
-
 
             $date = date("Y-m-d", strtotime($this->term_period, strtotime($date)));
 
