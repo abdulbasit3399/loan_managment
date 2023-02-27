@@ -4,15 +4,15 @@
 <div class="row">
   <div class="col-md-4 col-lg-3">
     <ul class="nav flex-column nav-tabs settings-tab" role="tablist">
-      <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#account_overview"><i class="icofont-ui-user"></i> {{ _lang('Account Overview') }}</a></li>
-      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#transactions"><i class="icofont-listine-dots"></i>{{ _lang('Transactions') }}</a></li>
-      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#add_money"><i class="icofont-plus-circle"></i> {{ _lang('Add Money') }}</a></li> --}}
-      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#deduct_money"><i class="icofont-minus-circle"></i> {{ _lang('Deduct Money') }}</a></li> --}}
-      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#my_loans"><i class="icofont-bank"></i> {{ _lang('Loans') }}</a></li>
-      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#my_fdr"><i class="icofont-money"></i> {{ _lang('Fixed Deposit') }}</a></li> --}}
-      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#support_tickets"><i class="icofont-live-support"></i> {{ _lang('Support Ticket') }}</a></li>
-      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#email"><i class="icofont-email"></i> {{ _lang('Send Email') }}</a></li> --}}
-      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#sms"><i class="icofont-email"></i> {{ _lang('Send SMS') }}</a></li> --}}
+      <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#account_overview"><i class="fa-solid fa-user"></i> {{ _lang('Account Overview') }}</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#transactions"><i class="fa-solid fa-list"></i>{{ _lang('Transactions') }}</a></li>
+      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#add_money"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add Money') }}</a></li> --}}
+      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#deduct_money"><i class="fa-solid fa-circle-minus"></i> {{ _lang('Deduct Money') }}</a></li> --}}
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#my_loans"><i class="fa-solid fa-building-columns"></i> {{ _lang('Loans') }}</a></li>
+      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#my_fdr"><i class="fa-solid fa-sack-dollar"></i> {{ _lang('Fixed Deposit') }}</a></li> --}}
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#support_tickets"><i class="fa-solid fa-headset"></i> {{ _lang('Support Ticket') }}</a></li>
+      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#email"><i class="fa-solid fa-envelope"></i> {{ _lang('Send Email') }}</a></li> --}}
+      {{-- <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#sms"><i class="fa-solid fa-envelope"></i> {{ _lang('Send SMS') }}</a></li> --}}
     </ul>
   </div>
 
@@ -54,7 +54,7 @@
               <tr>
                 <td>{{ _lang('Endorsement Letter') }}</td>
                 <td>
-                  <a href="{{asset('uploads/pdf/'.$user->company_e_signature)}}" class="btn btn-primary btn-sm approve"><i class="icofont-download"></i> {{ _lang('Download Endorsement Letter') }}</a>
+                  <a href="{{asset('uploads/pdf/'.$user->company_e_signature)}}" class="btn btn-primary btn-sm approve"><i class="fa-sharp fa-solid fa-download"></i> {{ _lang('Download Endorsement Letter') }}</a>
                 </td>
               </tr>
               @endif
@@ -308,7 +308,7 @@
                   <td>{{ strtoupper($transaction->dr_cr) }}</td>
                   <td>{{ str_replace('_',' ',$transaction->type) }}</td>
                   <td>{!! xss_clean(transaction_status($transaction->status)) !!}</td>
-                  <td><a href="{{ action('TransferRequestController@show', $transaction['id']) }}" data-title="{{ _lang('Transaction Details') }}" class="btn btn-outline-primary btn-sm ajax-modal"><i class="icofont-eye-alt"></i> {{ _lang('Details') }}</a></td>
+                  <td><a href="{{ action('TransferRequestController@show', $transaction['id']) }}" data-title="{{ _lang('Transaction Details') }}" class="btn btn-outline-primary btn-sm ajax-modal"><i class="fa-solid fa-eye"></i> {{ _lang('Details') }}</a></td>
                 </tr>
                 @endforeach
               </tbody>
@@ -360,7 +360,7 @@
 
                 <div class="col-md-12">
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg"><i class="icofont-check-circled"></i> {{ _lang('Submit') }}</button>
+                    <button type="submit" class="btn btn-primary btn-lg"><i class="fa-solid fa-circle-check"></i> {{ _lang('Submit') }}</button>
                   </div>
                 </div>
               </div>
@@ -412,7 +412,7 @@
 
                 <div class="col-md-12">
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-lg"><i class="icofont-check-circled"></i> {{ _lang('Submit') }}</button>
+                    <button type="submit" class="btn btn-primary btn-lg"><i class="fa-solid fa-circle-check"></i> {{ _lang('Submit') }}</button>
                   </div>
                 </div>
               </div>
@@ -425,7 +425,7 @@
         <div class="card">
           <div class="card-header d-flex justify-content-between align-items-center">
             <span class="panel-title">{{ _lang('Loans') }}</span>
-            <a class="btn btn-primary btn-sm float-right" href="{{ route('loans.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New Loan') }}</a>
+            <a class="btn btn-primary btn-sm float-right" href="{{ route('loans.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New Loan') }}</a>
           </div>
 
           <div class="card-body">
@@ -531,7 +531,7 @@
                   <td>{!! xss_clean(ticket_status($supportticket->status)) !!}</td>
                   <td>{{ $supportticket->created_at }}</td>
                   <td class="text-center">
-                    <a href="{{ action('SupportTicketController@show', $supportticket['id']) }}" class="btn btn-primary btn-sm"><i class="icofont-ui-messaging"></i> {{ _lang('View Conversations') }}</a>
+                    <a href="{{ action('SupportTicketController@show', $supportticket['id']) }}" class="btn btn-primary btn-sm"><i class="fa-solid fa-message-dots"></i> {{ _lang('View Conversations') }}</a>
                   </td>
                 </tr>
                 @endforeach
@@ -574,7 +574,7 @@
 
                 <div class="col-md-12">
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block"><i class="icofont-check-circled"></i> {{ _lang('Send') }}</button>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-circle-check"></i> {{ _lang('Send') }}</button>
                   </div>
                 </div>
               </div>
@@ -609,7 +609,7 @@
 
                 <div class="col-md-12">
                   <div class="form-group">
-                    <button type="submit" class="btn btn-primary btn-block"><i class="icofont-check-circled"></i> {{ _lang('Send') }}</button>
+                    <button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-circle-check"></i> {{ _lang('Send') }}</button>
                   </div>
                 </div>
               </div>

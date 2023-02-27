@@ -8,7 +8,7 @@
 		    <div class="card-header d-flex align-items-center">
 				<span class="panel-title">{{ _lang('Pages') }}</span>
 				@if(has_permission('pages.create'))
-				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('pages.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('pages.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 				@endif
 			</div>
 			<div class="card-body">
@@ -39,8 +39,8 @@
 									<input name="_method" type="hidden" value="DELETE">
 
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('PageController@edit', $page['id']) }}" class="dropdown-item dropdown-edit dropdown-edit"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-										<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+										<a href="{{ action('PageController@edit', $page['id']) }}" class="dropdown-item dropdown-edit dropdown-edit"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</div>
 								  </form>
 								</div>

@@ -29,7 +29,7 @@
 							</div>
 
 							<div class="col-md-3">
-								<button type="submit" class="btn btn-light btn-sm btn-block mt-26"><i class="icofont-filter"></i> {{ _lang('Search') }}</button>
+								<button type="submit" class="btn btn-light btn-sm btn-block mt-26"><i class="fa-solid fa-filter"></i> {{ _lang('Search') }}</button>
 							</div>
 						</div>
 					</form>

@@ -37,7 +37,7 @@
 		</div>
 		<div class="col-md-12 mt-2">
 		    <div class="form-group">
-			    <button type="submit" class="btn btn-primary btn-lg"><i class="icofont-check-circled"></i> {{ _lang('Save') }}</button>
+			    <button type="submit" class="btn btn-primary btn-lg"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save') }}</button>
 		    </div>
 		</div>
 	</div>

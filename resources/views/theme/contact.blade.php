@@ -20,21 +20,21 @@
          <div class="row">
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="contact-block mb-4 mb-lg-0">
-                    <i class="icofont-live-support"></i>
+                    <i class="fa-solid fa-headset"></i>
                     <h5>{{ _lang('Call Us') }}</h5>
                     {{ get_option('phone') }}
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="contact-block mb-4 mb-lg-0">
-                    <i class="icofont-support-faq"></i>
+                    <i class="fa-sharp fa-solid fa-comment-question"></i>
                     <h5>{{ _lang('Email Us') }}</h5>
                     {{ get_option('email') }}
                 </div>
             </div>
             <div class="col-lg-4 col-sm-6 col-md-6">
                 <div class="contact-block mb-4 mb-lg-0">
-                    <i class="icofont-location-pin"></i>
+                    <i class="fa-solid fa-location-pin"></i>
                     <h5>{{ _lang('Location') }}</h5>
                     {{ get_option('address') }}
                 </div>

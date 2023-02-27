@@ -4,16 +4,16 @@
 <div class="row">
 	<div class="col-sm-3">
 		<ul class="nav flex-column nav-tabs settings-tab" role="tablist">
-			 <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#general"><i class="icofont-settings"></i> {{ _lang('General Settings') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#system"><i class="icofont-ui-settings"></i> {{ _lang('System Settings') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#request_otp"><i class="icofont-smart-phone"></i> {{ _lang('Request & OTP') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#email"><i class="icofont-email"></i> {{ _lang('Email Configurations') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#payment_gateway"><i class="icofont-ui-messaging"></i> {{ _lang('SMS Gateway') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#social_login"><i class="icofont-google-plus"></i> {{ _lang('Social Login') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#google_recaptcha"><i class="icofont-verification-check"></i> {{ _lang('Google Recaptcha v3') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cron_jobs"><i class="icofont-clock-time"></i> {{ _lang('Cron Jobs') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#logo"><i class="icofont-image"></i> {{ _lang('Logo and Favicon') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cache"><i class="icofont-server"></i> {{ _lang('Cache Control') }}</a></li>
+			 <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#general"><i class="fa-solid fa-sliders"></i> {{ _lang('General Settings') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#system"><i class="fa-solid fa-gears"></i> {{ _lang('System Settings') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#request_otp"><i class="fa-solid fa-mobile"></i> {{ _lang('Request & OTP') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#email"><i class="fa-solid fa-envelope"></i> {{ _lang('Email Configurations') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#payment_gateway"><i class="fa-solid fa-message-dots"></i> {{ _lang('SMS Gateway') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#social_login"><i class="fa-brands fa-google-plus-g"></i> {{ _lang('Social Login') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#google_recaptcha"><i class="fa-solid fa-check"></i> {{ _lang('Google Recaptcha v3') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cron_jobs"><i class="fa-solid fa-clock"></i> {{ _lang('Cron Jobs') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#logo"><i class="fa-solid fa-image"></i> {{ _lang('Logo and Favicon') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#cache"><i class="fa-solid fa-server"></i> {{ _lang('Cache Control') }}</a></li>
 		</ul>
 	</div>
 
@@ -99,7 +99,7 @@
 
 								<div class="col-md-12">
 								  <div class="form-group">
-									<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+									<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
 								  </div>
 								</div>
 							</div>
@@ -231,7 +231,7 @@
 
 								<div class="col-md-12">
 								  <div class="form-group">
-									<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+									<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
 								  </div>
 								</div>
 							</div>
@@ -326,7 +326,7 @@
 
 								<div class="col-md-12">
 									<div class="form-group">
-										<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+										<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
 									</div>
 								</div>
 
@@ -411,7 +411,7 @@
 
 								<div class="col-md-12">
 									<div class="form-group">
-										<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+										<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
 									</div>
 								</div>
 							</div>
@@ -444,7 +444,7 @@
 
 								<div class="col-md-12">
 									<div class="form-group">
-										<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Send Test Email') }}</button>
+										<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Send Test Email') }}</button>
 									</div>
 								</div>
 							</div>
@@ -497,7 +497,7 @@
 
 								<div class="col-md-12">
 								 	<div class="form-group">
-										<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+										<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
 								  	</div>
 								</div>
 							</div>
@@ -598,7 +598,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+										<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
 									</div>
 								</div>
 							</div>
@@ -646,7 +646,7 @@
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+										<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
 									</div>
 								</div>
 							</div>

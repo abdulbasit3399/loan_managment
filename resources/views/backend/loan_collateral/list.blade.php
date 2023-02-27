@@ -37,9 +37,9 @@
 									<input name="_method" type="hidden" value="DELETE">
 
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('LoanCollateralController@edit', $loancollateral['id']) }}" class="dropdown-item dropdown-edit dropdown-edit"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-										<a href="{{ action('LoanCollateralController@show', $loancollateral['id']) }}" class="dropdown-item dropdown-view dropdown-view"><i class="icofont-eye-alt"></i> {{ _lang('View') }}</a>
-										<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+										<a href="{{ action('LoanCollateralController@edit', $loancollateral['id']) }}" class="dropdown-item dropdown-edit dropdown-edit"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<a href="{{ action('LoanCollateralController@show', $loancollateral['id']) }}" class="dropdown-item dropdown-view dropdown-view"><i class="fa-solid fa-eye"></i> {{ _lang('View') }}</a>
+										<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</div>
 									</form>
 								</div>

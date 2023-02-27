@@ -7,7 +7,7 @@
 		<div class="card no-export">
 		    <div class="card-header d-flex align-items-center">
 				<span class="panel-title">{{ _lang('All FAQ') }}</span>
-				<a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Add New FAQ') }}" href="{{ route('faqs.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Add New FAQ') }}" href="{{ route('faqs.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="faqs_table" class="table table-bordered data-table">
@@ -34,8 +34,8 @@
 									<input name="_method" type="hidden" value="DELETE">
 
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('FaqController@edit', $faq['id']) }}" data-title="{{ _lang('Update FAQ') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-										<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+										<a href="{{ action('FaqController@edit', $faq['id']) }}" data-title="{{ _lang('Update FAQ') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</div>
 								  </form>
 								</span>

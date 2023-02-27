@@ -40,7 +40,7 @@
 							</div>
 
 							<div class="col-md-3">
-								<button type="submit" class="btn btn-light btn-sm btn-block mt-26"><i class="icofont-filter"></i> {{ _lang('Company Search') }}</button>
+								<button type="submit" class="btn btn-light btn-sm btn-block mt-26"><i class="fa-solid fa-filter"></i> {{ _lang('Company Search') }}</button>
 							</div>
 						</div>
 					</form>
@@ -53,7 +53,7 @@
 							<input type="hidden" name="company_id" id="company_id_2" value="">
 							{{ csrf_field() }}
 							<div class="col-md-3">
-								<button type="submit" class="btn btn-light btn-sm btn-block mt-26"><i class="icofont-filter"></i> {{ _lang('Save Report') }}</button>
+								<button type="submit" class="btn btn-light btn-sm btn-block mt-26"><i class="fa-solid fa-filter"></i> {{ _lang('Save Report') }}</button>
 							</div>
 						</div>
 					</form>

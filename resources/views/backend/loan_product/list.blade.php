@@ -6,7 +6,7 @@
 		<div class="card">
 			<div class="card-header d-flex justify-content-between align-items-center">
 				<span class="panel-title">{{ _lang('Loan Products') }}</span>
-				<a class="btn btn-primary btn-sm float-right" href="{{ route('loan_products.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm float-right" href="{{ route('loan_products.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="loan_products_table" class="table table-bordered data-table">
@@ -49,9 +49,9 @@
 									<input name="_method" type="hidden" value="DELETE">
 
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('LoanProductController@edit', $loanproduct['id']) }}" class="dropdown-item dropdown-edit dropdown-edit"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-										<a href="{{ route('loan_products.duplicate', $loanproduct['id']) }}" class="dropdown-item dropdown-edit dropdown-edit"><i class="icofont-ui-copy"></i> {{ _lang('Duplicate') }}</a>
-										<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+										<a href="{{ action('LoanProductController@edit', $loanproduct['id']) }}" class="dropdown-item dropdown-edit dropdown-edit"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<a href="{{ route('loan_products.duplicate', $loanproduct['id']) }}" class="dropdown-item dropdown-edit dropdown-edit"><i class="fa-solid fa-copy"></i> {{ _lang('Duplicate') }}</a>
+										<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</div>
 									</form>
 								</div>

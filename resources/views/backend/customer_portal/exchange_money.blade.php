@@ -52,7 +52,7 @@
 
 						<div class="col-md-12 mt-4">
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-lg btn-block"><i class="icofont-check-circled"></i> {{ _lang('Exchange Money') }}</button>
+								<button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fa-solid fa-circle-check"></i> {{ _lang('Exchange Money') }}</button>
 							</div>
 						</div>
 					</div>

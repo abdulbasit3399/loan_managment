@@ -83,9 +83,9 @@
                            @endif
 
                            @if($loan->status == 0)
-                           <a class="btn btn-outline-primary btn-sm" href="{{ action('LoanController@approve', $loan['id']) }}"><i class="icofont-check-circled"></i> {{ _lang("Click to Approve") }}</a
+                           <a class="btn btn-outline-primary btn-sm" href="{{ action('LoanController@approve', $loan['id']) }}"><i class="fa-solid fa-circle-check"></i> {{ _lang("Click to Approve") }}</a
                               >
-                           <a class="btn btn-outline-danger btn-sm float-right" href="{{ action('LoanController@reject', $loan['id']) }}"><i class="icofont-close-line-circled"></i> {{ _lang("Click to Reject") }}</a>
+                           <a class="btn btn-outline-danger btn-sm float-right" href="{{ action('LoanController@reject', $loan['id']) }}"><i class="fa-solid fa-circle-xmark"></i> {{ _lang("Click to Reject") }}</a>
                            @endif
                         </td>
                      </tr>
@@ -164,7 +164,7 @@
                         <a
                            class="btn btn-primary btn-sm ml-auto"
                            href="{{ route('loan_collaterals.create',['loan_id' => $loan->id]) }}"
-                           ><i class="icofont-plus-circle"></i>
+                           ><i class="fa-solid fa-circle-plus"></i>
                         {{ _lang("Add New Collateral") }}</a
                            >
                      </div>
@@ -234,7 +234,7 @@
                                                    class="
                                                    dropdown-item dropdown-edit dropdown-edit
                                                    "
-                                                   ><i class="icofont-ui-edit"></i>
+                                                   ><i class="fa-solid fa-pen-to-square"></i>
                                                 {{ _lang("Edit") }}</a
                                                    >
                                                 <a
@@ -247,14 +247,14 @@
                                                    class="
                                                    dropdown-item dropdown-view dropdown-view
                                                    "
-                                                   ><i class="icofont-eye-alt"></i>
+                                                   ><i class="fa-solid fa-eye"></i>
                                                 {{ _lang("View") }}</a
                                                    >
                                                 <button
                                                    class="btn-remove dropdown-item"
                                                    type="submit"
                                                    >
-                                                <i class="icofont-trash"></i>
+                                                <i class="fa-solid fa-trash"></i>
                                                 {{ _lang("Delete") }}
                                                 </button>
                                              </div>
@@ -326,11 +326,11 @@
                            <td>
                               @if($payment['status'] == 0)
                               <div class="d-flex">
-                                 <a href="{{route('loans.loan_payment_status',[$payment['id'],1])}}" class="btn btn-success btn-sm"><i class="icofont-check"></i></a>
-                                 <a href="{{route('loans.loan_payment_status',[$payment['id'],2])}}" class="btn btn-danger btn-sm"><i class="icofont-close"></i></a>
+                                 <a href="{{route('loans.loan_payment_status',[$payment['id'],1])}}" class="btn btn-success btn-sm"><i class="fa-solid fa-check"></i></a>
+                                 <a href="{{route('loans.loan_payment_status',[$payment['id'],2])}}" class="btn btn-danger btn-sm"><i class="fa-solid fa-xmark"></i></a>
                               </div>
                               @else
-                                 <a href="#" class="btn btn-success btn-sm disabled" ><i class="icofont-check"></i></a>
+                                 <a href="#" class="btn btn-success btn-sm disabled" ><i class="fa-solid fa-check"></i></a>
                               @endif
                            </td>
                         </tr>
@@ -401,7 +401,7 @@
                            @endforeach
                            <td class="text-center">
                               @if($repayment['status'] == 0 && $loan->next_payment->id == $repayment->id)
-                                  <a href="{{ route('loans.manual_payment', $repayment->loan_id) }}" class="btn btn-success btn-sm"><i class="icofont-credit-card"></i> {{ _lang('Pay Now') }}</a>
+                                  <a href="{{ route('loans.manual_payment', $repayment->loan_id) }}" class="btn btn-success btn-sm"><i class="fa-solid fa-credit-card"></i> {{ _lang('Pay Now') }}</a>
                               @else
                                   <span class="badge badge-secondary">{{ _lang('No Action') }}</span>
                               @endif

@@ -29,8 +29,8 @@
 							<td class='name'>{{ $loan->first_name }} {{ $loan->middle_name }} {{ $loan->last_name }}</td>
 							<td>{{  decimalPlace($loan->applied_amount, currency($loan->currency->name)) }}</td>
 							<td class="text-center">
-								{{-- <a href="{{ action('CompanyController@approveRequest', $loan['id']) }}" class="btn btn-primary btn-sm"><i class="icofont-ui-edit"></i> {{ _lang('Approve') }}</a> --}}
-								<a href="#" data-id="{{$loan->id}}" data-amount="{{  decimalPlace($loan->applied_amount, currency($loan->currency->name)) }}" data-name="{{ ucfirst($loan->first_name).' '.ucfirst($loan->last_name) }}"  class="btn btn-primary btn-sm approve"><i class="icofont-ui-edit"></i> {{ _lang('Approve') }}</a>
+								{{-- <a href="{{ action('CompanyController@approveRequest', $loan['id']) }}" class="btn btn-primary btn-sm"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Approve') }}</a> --}}
+								<a href="#" data-id="{{$loan->id}}" data-amount="{{  decimalPlace($loan->applied_amount, currency($loan->currency->name)) }}" data-name="{{ ucfirst($loan->first_name).' '.ucfirst($loan->last_name) }}"  class="btn btn-primary btn-sm approve"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Approve') }}</a>
 							</td>
 					    </tr>
 					    @endforeach

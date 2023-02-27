@@ -13,7 +13,7 @@
 						<option value="1">{{ _lang('Approved') }}</option>
 						<option value="2">{{ _lang('Completed') }}</option>
 					</select>
-					<a class="btn btn-primary btn-sm" href="{{ route('loans.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+					<a class="btn btn-primary btn-sm" href="{{ route('loans.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 				</div>
 			</div>
 

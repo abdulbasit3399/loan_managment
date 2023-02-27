@@ -5,12 +5,12 @@
 <div class="row">
 	<div class="col-lg-12">
 		<div class="alert alert-info">
-			<p><i class="icofont-info-circle"></i> {{ _lang('Base Currency exchange rate always 1.00') }}</p>
+			<p><i class="fa-solid fa-circle-info"></i> {{ _lang('Base Currency exchange rate always 1.00') }}</p>
 		</div>
 		<div class="card no-export">
 		    <div class="card-header">
 				<span class="panel-title">{{ _lang('Currency List') }}</span>
-				<a class="btn btn-primary btn-sm float-right ajax-modal" data-title="{{ _lang('Add New Currency') }}" href="{{ route('currency.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm float-right ajax-modal" data-title="{{ _lang('Add New Currency') }}" href="{{ route('currency.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="currency_table" class="table table-bordered data-table">
@@ -42,15 +42,15 @@
 									<input name="_method" type="hidden" value="DELETE">
 
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('CurrencyController@edit', $currency['id']) }}" data-title="{{ _lang('Update Currency') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-										<a href="{{ action('CurrencyController@show', $currency['id']) }}" data-title="{{ _lang('Currency Details') }}" class="dropdown-item dropdown-view ajax-modal"><i class="icofont-eye-alt"></i> {{ _lang('View') }}</a>
-										<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+										<a href="{{ action('CurrencyController@edit', $currency['id']) }}" data-title="{{ _lang('Update Currency') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<a href="{{ action('CurrencyController@show', $currency['id']) }}" data-title="{{ _lang('Currency Details') }}" class="dropdown-item dropdown-view ajax-modal"><i class="fa-solid fa-eye"></i> {{ _lang('View') }}</a>
+										<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</div>
 								  </form>
 								  @else
 								  	<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('CurrencyController@edit', $currency['id']) }}" data-title="{{ _lang('Update Currency') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-										<a href="{{ action('CurrencyController@show', $currency['id']) }}" data-title="{{ _lang('Currency Details') }}" class="dropdown-item dropdown-view ajax-modal"><i class="icofont-eye-alt"></i> {{ _lang('View') }}</a>
+										<a href="{{ action('CurrencyController@edit', $currency['id']) }}" data-title="{{ _lang('Update Currency') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<a href="{{ action('CurrencyController@show', $currency['id']) }}" data-title="{{ _lang('Currency Details') }}" class="dropdown-item dropdown-view ajax-modal"><i class="fa-solid fa-eye"></i> {{ _lang('View') }}</a>
 									</div>
 								  @endif
 								</span>

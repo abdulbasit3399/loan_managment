@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="{{ asset('theme/plugins/bootstrap/css/bootstrap.min.css') }}">
     <!-- Icon Font Css -->
     <link rel="stylesheet" href="{{ asset('theme/plugins/icofont/icofont.min.css') }}">
+    <script src="https://kit.fontawesome.com/71fdf97ce3.js" crossorigin="anonymous"></script>
     <!-- Slick Slider  CSS -->
     <link rel="stylesheet" href="{{ asset('theme/plugins/slick-carousel/slick/slick.css') }}">
     <link rel="stylesheet" href="{{ asset('theme/plugins/slick-carousel/slick/slick-theme.css') }}">
@@ -34,25 +35,27 @@
                 </a>
 
                 <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="icofont-navigation-menu"></span>
+                    <span class="fa-solid fa-bars"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarmain">
                     {!! xss_clean(show_navigation(get_option('primary_menu'), 'navbar-nav ml-auto', 'nav-link')) !!}
 
                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link btn-outline-red mr-lg-2" href="{{ route('login') }}"><i class="icofont-lock"></i> Sign In</a></li>
+                        <li class="nav-item"><a class="nav-link btn-outline-red mr-lg-2" href="{{ route('login') }}"><i class="fa-solid fa-lock"></i> Sign In</a></li>
                         @if(get_option('allow_singup') == 'yes')
-                        <li class="nav-item"><a class="nav-link btn-signup mr-lg-2" href="{{ route('register') }}"><i class="icofont-ui-user"></i> Sign Up</a></li>
+                        <li class="nav-item"><a class="nav-link btn-signup mr-lg-2" href="{{ route('register') }}"><i class="fa-solid fa-user"></i> Sign Up</a></li>
                         @endif
+                        {{--
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle btn-outline-red" id="languageSelector" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="icofont-globe"></i>  {{ session('language') =='' ? get_option('language') : session('language') }} <i class="icofont-thin-down"></i></a>
+                            <a class="nav-link dropdown-toggle btn-outline-red" id="languageSelector" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-globe"></i>  {{ session('language') =='' ? get_option('language') : session('language') }} <i class="fa-solid fa-chevron-down"></i></a>
                             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageSelector">
                                 @foreach(get_language_list() as $language)
                                     <a class="dropdown-item" href="{{ url('/') }}?language={{ $language }}">{{ $language }}</a>
                                 @endforeach
                             </ul>
                         </li>
+                        --}}
                     </ul>
                 </div>
             </div>
@@ -73,9 +76,9 @@
                         <p>{{ get_trans_option('footer_about_us') }}</p>
 
                         <ul class="list-inline footer-socials mt-4">
-                            <li class="list-inline-item"><a href="{{ get_option('facebook_link') }}"><i class="icofont-facebook"></i></a></li>
-                            <li class="list-inline-item"><a href="{{ get_option('twitter_link') }}"><i class="icofont-twitter"></i></a></li>
-                            <li class="list-inline-item"><a href="{{ get_option('linkedin_link') }}"><i class="icofont-linkedin"></i></a></li>
+                            <li class="list-inline-item"><a href="{{ get_option('facebook_link') }}"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li class="list-inline-item"><a href="{{ get_option('twitter_link') }}"><i class="fa-brands fa-twitter"></i></a></li>
+                            <li class="list-inline-item"><a href="{{ get_option('linkedin_link') }}"><i class="fa-brands fa-linkedin"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -109,7 +112,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <a class="backtop js-scroll-trigger" href="#top">
-                            <i class="icofont-long-arrow-up"></i>
+                            <i class="fa-solid fa-arrow-up"></i>
                         </a>
                     </div>
                 </div>

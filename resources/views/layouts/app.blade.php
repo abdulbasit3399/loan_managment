@@ -24,7 +24,7 @@
 	    <link href="{{ asset('backend/plugins/jquery-toast-plugin/jquery.toast.min.css') }}" rel="stylesheet" />
 
 		<!-- App Css -->
-		<link rel="stylesheet" href="{{ asset('backend/assets/fonts/icofont/icofont.min.css') }}">
+		{{-- <link rel="stylesheet" href="{{ asset('backend/assets/fonts/icofont/icofont.min.css') }}"> --}}
 		<link rel="stylesheet" href="{{ asset('backend/assets/css/styles.css') }}">
 
 		<!-- Modernizr -->
@@ -35,7 +35,7 @@
 			<link rel="stylesheet" href="{{ asset('backend/assets/css/rtl/bootstrap.min.css') }}">
 			<link rel="stylesheet" href="{{ asset('backend/assets/css/rtl/style.css') }}">
 		@endif
-
+		<script src="https://kit.fontawesome.com/71fdf97ce3.js" crossorigin="anonymous"></script>
 		@include('layouts.others.languages')
 
     </head>
@@ -97,7 +97,7 @@
 
 				<ul class="navbar-nav ml-auto ml-md-0 notification-area">
 					<li class="nav-item dropdown animate-dropdown">
-						<i class="icofont-notification dropdown-toggle" data-toggle="dropdown">
+						<i class="fa-solid fa-bell dropdown-toggle" data-toggle="dropdown">
 							@php $notificatioCount = Auth::user()->unreadNotifications->count(); @endphp
 							@if($notificatioCount > 0)
 								<span id="notification-count">{{ Auth::user()->unreadNotifications->count() }}</span>
@@ -124,7 +124,7 @@
 										</a>
 
 										@if($notification->read_at == null)
-										<a href="{{ route('profile.notification_mark_as_read', $notification->id) }}" class="notification_mark_as_read"><i class="icofont-checked"></i></a>
+										<a href="{{ route('profile.notification_mark_as_read', $notification->id) }}" class="notification_mark_as_read"><i class="fa-solid fa-checked"></i></a>
 										@endif
 									</div>
 								@endforeach
@@ -136,7 +136,7 @@
 				{{--
 				<ul class="navbar-nav ml-auto ml-md-0">
 					<li class="nav-item dropdown animate-dropdown">
-						<a class="nav-link dropdown-toggle" id="languageSelector" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont-world"></i> {{ session('language') =='' ? get_option('language') : session('language') }}</a>
+						<a class="nav-link dropdown-toggle" id="languageSelector" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-earth-americas"></i> {{ session('language') =='' ? get_option('language') : session('language') }}</a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="languageSelector">
 							@foreach(get_language_list() as $language)
 								<a class="dropdown-item" href="{{ url('/') }}?language={{ $language }}">{{ $language }}</a>
@@ -148,16 +148,16 @@
 
 				<ul class="navbar-nav ml-auto ml-md-0">
 					<li class="nav-item dropdown animate-dropdown">
-						<a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="icofont-ui-user"></i></a>
+						<a class="nav-link dropdown-toggle" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa-solid fa-user"></i></a>
 						<div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
-							<a class="dropdown-item" href="{{ route('profile.index') }}"><i class="icofont-ui-user"></i> {{ _lang('Profile Overview') }}</a>
-							<a class="dropdown-item" href="{{ route('profile.edit') }}"><i class="icofont-ui-edit"></i> {{ _lang('Profile Settings') }}</a>
-							<a class="dropdown-item" href="{{ route('profile.change_password') }}"><i class="icofont-exchange"></i></i> {{ _lang('Change Password') }}</a>
+							<a class="dropdown-item" href="{{ route('profile.index') }}"><i class="fa-solid fa-user"></i> {{ _lang('Profile Overview') }}</a>
+							<a class="dropdown-item" href="{{ route('profile.edit') }}"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Profile Settings') }}</a>
+							<a class="dropdown-item" href="{{ route('profile.change_password') }}"><i class="fa-solid fa-arrow-right-arrow-left"></i></i> {{ _lang('Change Password') }}</a>
 							@if(auth()->user()->user_type == 'admin')
-							<a class="dropdown-item" href="{{ route('settings.update_settings') }}"><i class="icofont-ui-settings"></i> {{ _lang('System Settings') }}</a>
+							<a class="dropdown-item" href="{{ route('settings.update_settings') }}"><i class="fa-solid fa-gears"></i> {{ _lang('System Settings') }}</a>
 							@endif
 							<div class="dropdown-divider"></div>
-							<a class="dropdown-item" href="{{ route('logout') }}"><i class="icofont-exit"></i> {{ _lang('Logout') }}</a>
+							<a class="dropdown-item" href="{{ route('logout') }}"><i class="fa-solid fa-right-from-bracket"></i> {{ _lang('Logout') }}</a>
 						</div>
 					</li>
 				</ul>
@@ -167,7 +167,7 @@
 
 		<div id="layoutSidenav" class="container-fluid d-flex align-items-stretch">
 			<div id="layoutSidenav_nav">
-				<span class="close-mobile-nav"><i class="icofont-close-line-squared-alt"></i></span>
+				<span class="close-mobile-nav"><i class="fa-solid fa-xmark-line-squared-alt"></i></span>
                 <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
 
 					<div class="sidebar-user">
@@ -192,7 +192,7 @@
 						<div class="{{ isset($alert_col) ? $alert_col : 'col-lg-12' }}">
 							<div class="alert alert-success alert-dismissible" id="main_alert" role="alert">
 								<button type="button" id="close_alert" class="close">
-									<span aria-hidden="true"><i class="icofont-close-line-squared-alt"></i></span>
+									<span aria-hidden="true"><i class="fa-solid fa-xmark-line-squared-alt"></i></span>
 								</button>
 								<span class="msg"></span>
 							</div>
@@ -215,7 +215,8 @@
         <script src="{{ asset('backend/plugins/moment/moment.js') }}"></script>
 
 		<!-- Datatable js -->
-        <script src="{{ asset('backend/plugins/datatable/datatables.min.js') }}"></script>
+		<script type="text/javascript" src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.13.2/b-2.3.4/b-colvis-2.3.4/b-html5-2.3.4/b-print-2.3.4/r-2.4.0/datatables.min.js"></script>
+        {{-- <script src="{{ asset('backend/plugins/datatable/datatables.min.js') }}"></script> --}}
 
 		<script src="{{ asset('backend/plugins/dropify/js/dropify.min.js') }}"></script>
 		<script src="{{ asset('backend/plugins/sweet-alert2/sweetalert2.min.js') }}"></script>

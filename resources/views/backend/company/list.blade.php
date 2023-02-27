@@ -25,7 +25,7 @@
                     </div>
 
                     <a class="btn btn-primary btn-sm ajax-modal" data-title="{{ _lang('CREATE COMPANY') }}"
-                        href="{{ route('companies.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+                        href="{{ route('companies.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
                 </div>
             </div>
 

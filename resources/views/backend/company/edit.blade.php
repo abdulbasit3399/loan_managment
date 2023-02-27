@@ -144,7 +144,7 @@
 
                             <div class="form-group row">
                                 <div class="col-xl-9 offset-xl-3">
-                                    <button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Update User') }}</button>
+                                    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Update User') }}</button>
                                 </div>
                             </div>
                         </div>

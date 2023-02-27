@@ -4,15 +4,15 @@
 <div class="row">
     {{-- <div class="col-md-4 col-lg-3">
 		<ul class="nav flex-column nav-tabs settings-tab" role="tablist">
-			 <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#account_overview"><i class="icofont-ui-user"></i> {{ _lang('Account Overview') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#transactions"><i class="icofont-listine-dots"></i>{{ _lang('Transactions') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#add_money"><i class="icofont-plus-circle"></i> {{ _lang('Add Money') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#deduct_money"><i class="icofont-minus-circle"></i> {{ _lang('Deduct Money') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#my_loans"><i class="icofont-bank"></i> {{ _lang('Loans') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#my_fdr"><i class="icofont-money"></i> {{ _lang('Fixed Deposit') }}</a></li>
-			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#support_tickets"><i class="icofont-live-support"></i> {{ _lang('Support Ticket') }}</a></li>
-             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#email"><i class="icofont-email"></i> {{ _lang('Send Email') }}</a></li>
-             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#sms"><i class="icofont-email"></i> {{ _lang('Send SMS') }}</a></li>
+			 <li class="nav-item"><a class="nav-link active" data-toggle="tab" href="#account_overview"><i class="fa-solid fa-user"></i> {{ _lang('Account Overview') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#transactions"><i class="fa-solid fa-list"></i>{{ _lang('Transactions') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#add_money"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add Money') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#deduct_money"><i class="fa-solid fa-circle-minus"></i> {{ _lang('Deduct Money') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#my_loans"><i class="fa-solid fa-building-columns"></i> {{ _lang('Loans') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#my_fdr"><i class="fa-solid fa-sack-dollar"></i> {{ _lang('Fixed Deposit') }}</a></li>
+			 <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#support_tickets"><i class="fa-solid fa-headset"></i> {{ _lang('Support Ticket') }}</a></li>
+             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#email"><i class="fa-solid fa-envelope"></i> {{ _lang('Send Email') }}</a></li>
+             <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#sms"><i class="fa-solid fa-envelope"></i> {{ _lang('Send SMS') }}</a></li>
 		</ul>
 	</div> --}}
 

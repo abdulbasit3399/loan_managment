@@ -7,7 +7,7 @@
 		<div class="card no-export">
 		    <div class="card-header">
 				<span class="panel-title">{{ _lang('FDR Plans') }}</span>
-				<a class="btn btn-primary btn-sm float-right ajax-modal" data-title="{{ _lang('Add New Plan') }}" href="{{ route('fdr_plans.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm float-right ajax-modal" data-title="{{ _lang('Add New Plan') }}" href="{{ route('fdr_plans.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="fdr_plans_table" class="table table-bordered data-table">
@@ -42,9 +42,9 @@
 									<input name="_method" type="hidden" value="DELETE">
 
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('FDRPlanController@edit', $fdrplan['id']) }}" data-title="{{ _lang('Update Plan') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-										<a href="{{ action('FDRPlanController@show', $fdrplan['id']) }}" data-title="{{ _lang('Plan Details') }}" class="dropdown-item dropdown-view ajax-modal"><i class="icofont-eye-alt"></i> {{ _lang('View') }}</a>
-										<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+										<a href="{{ action('FDRPlanController@edit', $fdrplan['id']) }}" data-title="{{ _lang('Update Plan') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<a href="{{ action('FDRPlanController@show', $fdrplan['id']) }}" data-title="{{ _lang('Plan Details') }}" class="dropdown-item dropdown-view ajax-modal"><i class="fa-solid fa-eye"></i> {{ _lang('View') }}</a>
+										<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</div>
 								  </form>
 								</span>

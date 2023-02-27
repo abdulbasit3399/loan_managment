@@ -53,12 +53,12 @@
                             </td>
                             <td>
                                 <div class="text-center"><form action="{{action('UserController@destroy', $user['id'])}}" class="text-center" method="post">
-                                    <a href="{{action('UserController@show', $user['id'])}}" class="btn btn-primary btn-sm"><i class="icofont-eye-alt"></i></a>
+                                    <a href="{{action('UserController@show', $user['id'])}}" class="btn btn-primary btn-sm"><i class="fa-solid fa-eye"></i></a>
                                     
-                                    <a href="{{action('UserController@edit', $user['id'])}}" data-title="{{_lang('Update User')}}" class="btn btn-warning btn-sm"><i class="icofont-ui-edit"></i></a>
+                                    <a href="{{action('UserController@edit', $user['id'])}}" data-title="{{_lang('Update User')}}" class="btn btn-warning btn-sm"><i class="fa-solid fa-pen-to-square"></i></a>
                                 {{csrf_field()}}
                                 <input name="_method" type="hidden" value="DELETE">
-                                <button class="btn btn-danger btn-sm btn-remove" type="submit"><i class="icofont-trash"></i></button>
+                                <button class="btn btn-danger btn-sm btn-remove" type="submit"><i class="fa-solid fa-trash"></i></button>
                                 </form></div>
                             </td>
                         </tr>

@@ -7,7 +7,7 @@
 		<div class="card">
 			<div class="card-header d-flex align-items-center">
 				<h4 class="header-title">{{ _lang('Languages') }}</h4>
-				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('languages.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('languages.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 
 			<div class="card-body">
@@ -25,13 +25,13 @@
 							<tr>
 								<td>{{ $language }}</td>
 								<td>
-									<a href="{{ action('LanguageController@edit', $language) }}" class="btn btn-primary btn-sm"><i class="icofont-ui-edit"></i> {{ _lang('Edit Translation') }}</a>
+									<a href="{{ action('LanguageController@edit', $language) }}" class="btn btn-primary btn-sm"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit Translation') }}</a>
 								</td>
 								<td>
 									<form action="{{ action('LanguageController@destroy', $language) }}" method="post">
 									   {{ csrf_field() }}
 									   <input name="_method" type="hidden" value="DELETE">
-									   <button class="btn btn-danger btn-sm btn-remove" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+									   <button class="btn btn-danger btn-sm btn-remove" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</form>
 								</td>
 							</tr>

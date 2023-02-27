@@ -6,7 +6,7 @@
 		<div class="card">
 		    <div class="card-header d-flex align-items-center">
 				<h4 class="header-title">{{ _lang('Database Backups') }}</h4>
-				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('database_backups.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Create New Backup') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('database_backups.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Create New Backup') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="database_backups_table" class="table table-bordered data-table">
@@ -36,8 +36,8 @@
 										<input name="_method" type="hidden" value="DELETE">
 
 										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-											<a href="{{ action('UtilityController@download_database_backup', $databasebackup['id']) }}" class="dropdown-item dropdown-view"><i class="icofont-eye-alt"></i> {{ _lang('Download') }}</a>
-											<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+											<a href="{{ action('UtilityController@download_database_backup', $databasebackup['id']) }}" class="dropdown-item dropdown-view"><i class="fa-solid fa-eye"></i> {{ _lang('Download') }}</a>
+											<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 										</div>
 									</form>
 								</span>

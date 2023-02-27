@@ -7,7 +7,7 @@
 		    <div class="card-header d-flex align-items-center">
 				<span class="header-title">{{ _lang('Conversations') }}</span>
 				@if($supportticket->status == 1)
-				<a href="{{ route('tickets.mark_as_closed', $supportticket->id) }}" class="btn btn-outline-success ml-auto"><i class="icofont-check-circled"></i> {{ _lang('Mark as Closed') }}</a>
+				<a href="{{ route('tickets.mark_as_closed', $supportticket->id) }}" class="btn btn-outline-success ml-auto"><i class="fa-solid fa-circle-check"></i> {{ _lang('Mark as Closed') }}</a>
 				@endif
 			</div>
 
@@ -19,7 +19,7 @@
 					<div class="comment-body">
 						<p class="comment-text">{{ $message->message }}</p>
 						@if($message->attachment != null)
-						<a href="{{ asset('uploads/media/'.$message->attachment) }}" target="_blank"><small><i class="icofont-attachment"></i> {{ $message->attachment }}</small></a>
+						<a href="{{ asset('uploads/media/'.$message->attachment) }}" target="_blank"><small><i class="fa-solid fa-paperclip"></i> {{ $message->attachment }}</small></a>
 						@endif
 						<div class="comment-footer"><span class="comment-meta">{{ $message->sender->name }}</span></div>
 					</div>

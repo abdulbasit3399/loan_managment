@@ -24,10 +24,10 @@
                         </div>
                     </div>
 
-                    {{-- <a class="btn btn-primary btn-sm ajax-modal" data-title="{{ _lang('CREATE NEW USER') }}" href="{{ route('users.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a> --}}
+                    {{-- <a class="btn btn-primary btn-sm ajax-modal" data-title="{{ _lang('CREATE NEW USER') }}" href="{{ route('users.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a> --}}
 
                     <a class="btn btn-primary btn-sm" data-title="{{ _lang('CREATE NEW USER') }}"
-                        href="{{ route('users.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+                        href="{{ route('users.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
                 </div>
             </div>
 

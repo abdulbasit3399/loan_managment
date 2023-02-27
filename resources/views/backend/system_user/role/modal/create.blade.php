@@ -19,7 +19,7 @@
 	<div class="col-md-12">
 	    <div class="form-group">
 	        <button type="reset" class="btn btn-danger">{{ _lang('Reset') }}</button>
-		    <button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save') }}</button>
+		    <button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save') }}</button>
 	    </div>
 	</div>
 </form>

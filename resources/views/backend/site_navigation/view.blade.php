@@ -6,7 +6,7 @@
 		<div class="card">
 			<div class="card-header d-flex align-items-center">
 				<span class="panel-title">{{ $navigation->name }}</span>
-				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('navigation_items.create', $navigation->id) }}"><i class="icofont-plus-circle"></i> {{ _lang('New Navigation Item') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('navigation_items.create', $navigation->id) }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('New Navigation Item') }}</a>
 			</div>
 			<div class="card-body">
 
@@ -18,7 +18,7 @@
 					{{ csrf_field() }}
 					<textarea class="form-control d-none" name="sortable_menu" id="nestable-output"></textarea>
 					</br>
-					<button type="submit" class="btn btn-outline-success" id="save"><i class="icofont-check-circled"></i> {{ _lang('Save Sorting') }}</button>
+					<button type="submit" class="btn btn-outline-success" id="save"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Sorting') }}</button>
 				</form>
 			</div>
 		</div>

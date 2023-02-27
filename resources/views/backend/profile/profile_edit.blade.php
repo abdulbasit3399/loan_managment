@@ -65,7 +65,7 @@
 
 						<div class="col-12">
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-block"><i class="icofont-check-circled"></i> {{ _lang('Update Profile') }}</button>
+								<button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-circle-check"></i> {{ _lang('Update Profile') }}</button>
 							</div>
 						</div>
 					</div>

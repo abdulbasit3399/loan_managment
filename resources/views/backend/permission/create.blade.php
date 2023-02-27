@@ -37,7 +37,7 @@
 										<h4>
 											<a class="card-link" data-toggle="collapse"
 												href="#collapse-{{ explode("\\",$key)[3] }}">
-												<i class="icofont-double-right"></i>
+												<i class="fa-solid fa-angles-right"></i>
 												{{ str_replace("Controller","",explode("\\",$key)[3]) }}
 											</a>
 										</h4>
@@ -72,7 +72,7 @@
 
                         <div class="col-md-12 mt-4">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary btn-lg"><i class="icofont-check-circled"></i> {{ _lang('Save Permission') }}</button>
+                                <button type="submit" class="btn btn-primary btn-lg"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Permission') }}</button>
                             </div>
                         </div>
                     </div>

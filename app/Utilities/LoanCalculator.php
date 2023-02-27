@@ -245,7 +245,7 @@ class LoanCalculator {
             // dd($amount_to_pay);
             // dd($principle_amount);
             
-            $payable_amount     = $payable_amount + $amount_to_pay;
+            // $payable_amount     = $payable_amount + $amount_to_pay;
 
             $w = $balance * (($this->interest_rate / 100) / 12);
 
@@ -271,15 +271,15 @@ class LoanCalculator {
                 $interest = ($balance * ($int/12));
                 $principle_amount = $amount_to_pay - $interest;
                 $balance = $balance - $principle_amount;
-            
+
+                $payable_amount += $amount_to_pay;
 
 
 
             $date = date("Y-m-d", strtotime($this->term_period, strtotime($date)));
 
         }
-        $this->payable_amount = ((($this->interest_rate / 100) * $this->apply_amount) * $this->term) + $this->apply_amount;
-
+        $this->payable_amount = $payable_amount;
 
 
         return $data;

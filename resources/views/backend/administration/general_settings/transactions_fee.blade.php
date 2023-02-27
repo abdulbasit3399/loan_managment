@@ -6,7 +6,7 @@
 
 	<div class="col-md-12">
         <div class="alert alert-info">
-			<p><i class="icofont-info-circle"></i> {{ _lang('Fixed transfer fee & exchange fee will be in base currency and it will convert to other currency automatically based on exchange rate') }}</p>
+			<p><i class="fa-solid fa-circle-info"></i> {{ _lang('Fixed transfer fee & exchange fee will be in base currency and it will convert to other currency automatically based on exchange rate') }}</p>
 		</div>
         <div class="card">
             <div class="card-header">
@@ -53,7 +53,7 @@
 
                         <div class="col-md-12 mt-2">
                             <div class="form-group">
-                                <button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+                                <button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
                             </div>
                         </div>
                     </div>

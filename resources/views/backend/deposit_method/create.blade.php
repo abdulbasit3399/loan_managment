@@ -90,7 +90,7 @@
 						<div class="col-md-12 mt-3">
 							<div class="d-flex align-items-center">
 								<h5><b>{{ _lang('Deposit Informations') }}</b></h5>
-								<button type="button" id="add_row" class="btn btn-outline-primary btn-sm ml-auto"><i class="icofont-plus"></i> {{ _lang('Add New Field') }}</button>
+								<button type="button" id="add_row" class="btn btn-outline-primary btn-sm ml-auto"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New Field') }}</button>
 							</div>
 							<hr>
 							<div class="row" id="custom_fields">
@@ -100,7 +100,7 @@
 										<div class="input-group mb-3">
 											<input type="text" class="form-control" name="requirements[]" placeholder="EX: Transaction ID" required>
 											<div class="input-group-append">
-												<button class="btn btn-danger btn-sm" id="remove_field"><i class="icofont-trash"></i></button>
+												<button class="btn btn-danger btn-sm" id="remove_field"><i class="fa-solid fa-trash"></i></button>
 											</div>
 										</div>
 									</div>
@@ -111,7 +111,7 @@
 										<div class="input-group mb-3">
 											<input type="text" class="form-control" name="requirements[]" placeholder="EX: Reference Number" required>
 											<div class="input-group-append">
-												<button class="btn btn-danger btn-sm" id="remove_field"><i class="icofont-trash"></i></button>
+												<button class="btn btn-danger btn-sm" id="remove_field"><i class="fa-solid fa-trash"></i></button>
 											</div>
 										</div>
 									</div>
@@ -121,7 +121,7 @@
 
 						<div class="col-md-12 mt-2">
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-lg"><i class="icofont-check-circled"></i> {{ _lang('Save') }}</button>
+								<button type="submit" class="btn btn-primary btn-lg"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save') }}</button>
 							</div>
 						</div>
 					</div>
@@ -144,7 +144,7 @@
 											<div class="input-group mb-3">
 												<input type="text" class="form-control" name="requirements[]" required>
 												<div class="input-group-append">
-													<button class="btn btn-danger btn-sm" id="remove_field"><i class="icofont-trash"></i></button>
+													<button class="btn btn-danger btn-sm" id="remove_field"><i class="fa-solid fa-trash"></i></button>
 												</div>
 											</div>
 										</div>

@@ -8,7 +8,7 @@
             <div class="card-header d-flex align-items-center">
                 <h4 class="header-title">{{ _lang('User List') }}</h4>
                 <a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Create System User') }}"
-                    href="{{ route('system_users.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+                    href="{{ route('system_users.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
             </div>
 
             <div class="card-body">
@@ -48,14 +48,14 @@
                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                             <a href="{{ action('SystemUserController@edit', $user['id']) }}"
                                                 data-title="{{ _lang('Update User') }}"
-                                                class="dropdown-item ajax-modal"><i class="icofont-ui-edit"></i>
+                                                class="dropdown-item ajax-modal"><i class="fa-solid fa-pen-to-square"></i>
                                                 {{ _lang('Edit') }}</a>
                                             <a href="{{ action('SystemUserController@show', $user['id']) }}"
                                                 data-title="{{ _lang('View User') }}"
-                                                class="dropdown-item ajax-modal"><i class="icofont-eye-alt"></i>
+                                                class="dropdown-item ajax-modal"><i class="fa-solid fa-eye"></i>
                                                 {{ _lang('View') }}</a>
                                             <button class="btn-remove dropdown-item" type="submit"><i
-                                                    class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+                                                    class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
                                         </div>
                                     </form>
                                 </span>

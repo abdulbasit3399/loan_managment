@@ -29,14 +29,16 @@
 
 		<div class="row">
 			@foreach($team_members as $team_member)
-			<div class="col-lg-3 col-md-6 col-sm-6">
+			<div class="col-lg-12 col-md-12 col-sm-12">
 				<div class="team-block mb-5 mb-lg-0">
 					<img src="{{ media_images($team_member->image) }}" alt="{{ $team_member->name }}" class="img-fluid w-100">
 
+					{{--
 					<div class="content">
 						<h4 class="mt-4 mb-0">{{ $team_member->name }}</h4>
 						<p>{{ $team_member->role }}</p>
 					</div>
+					--}}
 				</div>
 			</div>
 			@endforeach
@@ -44,6 +46,7 @@
 	</div>
 </section>
 
+{{--
 <section class="section testimonial">
 	<div class="testimonial-bg" style="background: url({{ get_option('about_us_image') == '' ? asset('theme/images/about-us-main.jpg'): media_images(get_option('about_us_image')) }})"></div>
 	<div class="container">
@@ -62,4 +65,5 @@
 		</div>
 	</div>
 </section>
+--}}
 @endsection

@@ -2,14 +2,14 @@
 <div class="sb-sidenav-menu-heading">{{ _lang('NAVIGATIONS') }}</div>
 
 <a class="nav-link" href="{{ route('dashboard.index') }}">
-	<div class="sb-nav-link-icon"><i class="icofont-dashboard-web"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-regular fa-window-maximize"></i></div>
 	{{ _lang('Dashboard') }}
 </a>
 
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#users" aria-expanded="false" aria-controls="collapseLayouts">
-	<div class="sb-nav-link-icon"><i class="icofont-users-alt-3"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-users"></i></div>
 	{{ _lang('Users') }}
-	<div class="sb-sidenav-collapse-arrow"><i class="icofont-rounded-down"></i></div>
+	<div class="sb-sidenav-collapse-arrow"><i class="fa-solid fa-chevron-down"></i></div>
 </a>
 <div class="collapse" id="users" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 	<nav class="sb-sidenav-menu-nested nav">
@@ -42,7 +42,7 @@
 @if (in_array('internal_transfer_requests.index',$permissions))
 @if(get_option('send_money_action', 0) == 1 || get_option('exchange_money_action', 0) == 1)
 <a class="nav-link" href="{{ route('internal_transfer_requests.index') }}">
-	<div class="sb-nav-link-icon"><i class="icofont-info-square"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-square-info"></i></div>
 	{{ _lang('Transfer Requests') }}
 	{!! xss_clean(request_count('internal_transfer_requests',true)) !!}
 </a>
@@ -51,17 +51,17 @@
 
 @if (in_array('transfer_requests.index',$permissions))
 <a class="nav-link" href="{{ route('transfer_requests.index') }}">
-	<div class="sb-nav-link-icon"><i class="icofont-bank-transfer-alt"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-building-columns-transfer-alt"></i></div>
 	{{ _lang('Transfer Request') }}
 	{!! xss_clean(request_count('wire_transfer_requests',true)) !!}
 </a>
 @endif
 
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#deposit" aria-expanded="false" aria-controls="collapseLayouts">
-	<div class="sb-nav-link-icon"><i class="icofont-plus-square"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-circle-plus-square"></i></div>
 	{{ _lang('Deposit') }}
 	{!! xss_clean(request_count('deposit_requests',true)) !!}
-	<div class="sb-sidenav-collapse-arrow"><i class="icofont-rounded-down"></i></div>
+	<div class="sb-sidenav-collapse-arrow"><i class="fa-solid fa-chevron-down"></i></div>
 </a>
 <div class="collapse" id="deposit" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 	<nav class="sb-sidenav-menu-nested nav">
@@ -80,10 +80,10 @@
 </div>
 
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#withdraw" aria-expanded="false" aria-controls="collapseLayouts">
-	<div class="sb-nav-link-icon"><i class="icofont-minus-square"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-square-minus"></i></div>
 	{{ _lang('Withdraw') }}
 	{!! xss_clean(request_count('withdraw_requests',true)) !!}
-	<div class="sb-sidenav-collapse-arrow"><i class="icofont-rounded-down"></i></div>
+	<div class="sb-sidenav-collapse-arrow"><i class="fa-solid fa-chevron-down"></i></div>
 </a>
 <div class="collapse" id="withdraw" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 	<nav class="sb-sidenav-menu-nested nav">
@@ -103,16 +103,16 @@
 
 @if (in_array('transactions.index',$permissions))
 <a class="nav-link" href="{{ route('transactions.index') }}">
-	<div class="sb-nav-link-icon"><i class="icofont-listing-number"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-list-ol"></i></div>
 	{{ _lang('All Transactions') }}
 </a>
 @endif
 
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#loans" aria-expanded="false" aria-controls="collapseLayouts">
-	<div class="sb-nav-link-icon"><i class="icofont-dollar-minus"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-sharp fa-solid fa-dollar-sign"></i></div>
 	{{ _lang('Loan Management') }}
 	{!! xss_clean(request_count('pending_loans',true)) !!}
-	<div class="sb-sidenav-collapse-arrow"><i class="icofont-rounded-down"></i></div>
+	<div class="sb-sidenav-collapse-arrow"><i class="fa-solid fa-chevron-down"></i></div>
 </a>
 <div class="collapse" id="loans" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 	<nav class="sb-sidenav-menu-nested nav">
@@ -135,10 +135,10 @@
 </div>
 
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#fdr" aria-expanded="false" aria-controls="collapseLayouts">
-	<div class="sb-nav-link-icon"><i class="icofont-money"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-sack-dollar"></i></div>
 	{{ _lang('Fixed Deposit') }}
 	{!! xss_clean(request_count('fdr_requests',true)) !!}
-	<div class="sb-sidenav-collapse-arrow"><i class="icofont-rounded-down"></i></div>
+	<div class="sb-sidenav-collapse-arrow"><i class="fa-solid fa-chevron-down"></i></div>
 </a>
 <div class="collapse" id="fdr" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 	<nav class="sb-sidenav-menu-nested nav">
@@ -157,9 +157,9 @@
 </div>
 
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#gift_card" aria-expanded="false" aria-controls="collapseLayouts">
-	<div class="sb-nav-link-icon"><i class="icofont-gift"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-gift"></i></div>
 	{{ _lang('Gift Cards') }}
-	<div class="sb-sidenav-collapse-arrow"><i class="icofont-rounded-down"></i></div>
+	<div class="sb-sidenav-collapse-arrow"><i class="fa-solid fa-chevron-down"></i></div>
 </a>
 <div class="collapse" id="gift_card" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 	<nav class="sb-sidenav-menu-nested nav">
@@ -174,10 +174,10 @@
 </div>
 
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#tickets" aria-expanded="false" aria-controls="collapseLayouts">
-	<div class="sb-nav-link-icon"><i class="icofont-live-support"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-headset"></i></div>
 	{{ _lang('Support Tickets') }}
 	{!! xss_clean(request_count('pending_tickets',true)) !!}
-	<div class="sb-sidenav-collapse-arrow"><i class="icofont-rounded-down"></i></div>
+	<div class="sb-sidenav-collapse-arrow"><i class="fa-solid fa-chevron-down"></i></div>
 </a>
 <div class="collapse" id="tickets" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 	<nav class="sb-sidenav-menu-nested nav">
@@ -190,9 +190,9 @@
 </div>
 
 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#reports" aria-expanded="false" aria-controls="collapseLayouts">
-	<div class="sb-nav-link-icon"><i class="icofont-chart-line-alt"></i></div>
+	<div class="sb-nav-link-icon"><i class="fa-solid fa-chart-line"></i></div>
 	{{ _lang('Reports') }}
-	<div class="sb-sidenav-collapse-arrow"><i class="icofont-rounded-down"></i></div>
+	<div class="sb-sidenav-collapse-arrow"><i class="fa-solid fa-chevron-down"></i></div>
 </a>
 <div class="collapse" id="reports" aria-labelledby="headingOne" data-parent="#sidenavAccordion">
 	<nav class="sb-sidenav-menu-nested nav">

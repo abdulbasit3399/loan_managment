@@ -184,8 +184,7 @@
 
                                 <div class="col-md-12 mt-3">
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary"><i
-                                                class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+                                        <button type="submit" class="btn btn-primary"><i class="fa-light fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -246,8 +245,7 @@
 
                                 <div class="col-md-12 mt-3">
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary"><i
-                                                class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+                                        <button type="submit" class="btn btn-primary"><i class="fa-light fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -348,8 +346,7 @@
 
                                 <div class="col-md-12 mt-3">
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary"><i
-                                                class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+                                        <button type="submit" class="btn btn-primary"><i class="fa-light fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
                                     </div>
                                 </div>
                             </div>
@@ -388,8 +385,7 @@
 
                                 <div class="col-md-12 mt-3">
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-primary"><i
-                                                class="icofont-check-circled"></i> {{ _lang('Save Settings') }}</button>
+                                        <button type="submit" class="btn btn-primary"><i class="fa-light fa-circle-check"></i> {{ _lang('Save Settings') }}</button>
                                     </div>
                                 </div>
                             </div>

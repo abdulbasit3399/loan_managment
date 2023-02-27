@@ -274,7 +274,7 @@
 
 			<div class="col-md-12">
 
-				<button type="submit" class="btn btn-primary"><i class="icofont-check-circled"></i> {{ _lang('Update') }}</button>
+				<button type="submit" class="btn btn-primary"><i class="fa-solid fa-circle-check"></i> {{ _lang('Update') }}</button>
 
 			</div>
 

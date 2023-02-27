@@ -24,7 +24,7 @@
 							<td class='subject'>{{ $emailtemplate->subject }}</td>
 							<td class='status'>{!! xss_clean(status($emailtemplate->sms_status)) !!}</td>
 							<td class="text-center">
-								<a href="{{ action('SMSTemplateController@edit', $emailtemplate['id']) }}" class="btn btn-primary btn-sm"><i class="icofont-pencil-alt-5"></i> {{ _lang('Edit') }}</a>
+								<a href="{{ action('SMSTemplateController@edit', $emailtemplate['id']) }}" class="btn btn-primary btn-sm"><i class="fa-solid fa-pencil"></i> {{ _lang('Edit') }}</a>
 							</td>
 						</tr>
 						@endforeach

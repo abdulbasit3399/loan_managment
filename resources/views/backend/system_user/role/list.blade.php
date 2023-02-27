@@ -7,7 +7,7 @@
 		<div class="card">
 		    <div class="card-header d-flex align-items-center">
 				<h4 class="header-title">{{ _lang('User Roles') }}</h4>
-				<a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Create Role') }}" href="{{ route('roles.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Create Role') }}" href="{{ route('roles.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="roles_table" class="table table-bordered data-table">
@@ -35,9 +35,9 @@
 										<input name="_method" type="hidden" value="DELETE">
 
 										<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-											<a href="{{ action('RoleController@edit', $role['id']) }}" data-title="{{ _lang('Update Role') }}" class="dropdown-item ajax-modal"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-											<a href="{{ action('RoleController@show', $role['id']) }}" data-title="{{ _lang('View Role') }}" class="dropdown-item ajax-modal"><i class="icofont-eye-alt"></i> {{ _lang('View') }}</a>
-											<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+											<a href="{{ action('RoleController@edit', $role['id']) }}" data-title="{{ _lang('Update Role') }}" class="dropdown-item ajax-modal"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+											<a href="{{ action('RoleController@show', $role['id']) }}" data-title="{{ _lang('View Role') }}" class="dropdown-item ajax-modal"><i class="fa-solid fa-eye"></i> {{ _lang('View') }}</a>
+											<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 										</div>
 									</form>
 								</span>

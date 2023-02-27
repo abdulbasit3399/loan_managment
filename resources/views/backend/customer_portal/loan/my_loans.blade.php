@@ -6,7 +6,7 @@
 		<div class="card">
 			<div class="card-header d-flex justify-content-between align-items-center">
 				<span class="panel-title">{{ _lang('My Loans') }}</span>
-				<a class="btn btn-primary btn-sm float-right" href="{{ route('loans.apply_loan') }}"><i class="icofont-plus-circle"></i> {{ _lang('Apply Loan') }}</a>
+				<a class="btn btn-primary btn-sm float-right" href="{{ route('loans.apply_loan') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Apply Loan') }}</a>
 			</div>
 
 			<div class="card-body">

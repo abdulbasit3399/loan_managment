@@ -25,7 +25,7 @@
 							<td class='status'>{!! xss_clean(status($paymentgateway->status)) !!}</td>
 
 							<td class="text-center">
-								<a href="{{ action('PaymentGatewayController@edit', $paymentgateway['id']) }}" class="btn btn-primary btn-sm"><i class="icofont-ui-edit"></i> {{ _lang('Config') }}</a>
+								<a href="{{ action('PaymentGatewayController@edit', $paymentgateway['id']) }}" class="btn btn-primary btn-sm"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Config') }}</a>
 							</td>
 					    </tr>
 					    @endforeach

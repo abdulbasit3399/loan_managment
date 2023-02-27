@@ -5,7 +5,7 @@
 	<div class="col-lg-6 offset-lg-3">
 		@if($api_error != '')
 		<div class="alert alert-info">
-			<p><i class="icofont-warning"></i> {{ $api_error }}</p>
+			<p><i class="fa-solid fa-triangle-exclamation"></i> {{ $api_error }}</p>
 		</div>
 		@endif
 		<div class="card">
@@ -26,7 +26,7 @@
 
 						<div class="col-12">
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-block"><i class="icofont-check-circled"></i> {{ _lang('Submit') }}</button>
+								<button type="submit" class="btn btn-primary btn-block"><i class="fa-solid fa-circle-check"></i> {{ _lang('Submit') }}</button>
 							</div>
 						</div>
 

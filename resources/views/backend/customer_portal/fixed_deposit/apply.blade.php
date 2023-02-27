@@ -56,7 +56,7 @@
 
 						<div class="col-md-12">
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-lg btn-block"><i class="icofont-check-circled"></i> {{ _lang('Submit Request') }}</button>
+								<button type="submit" class="btn btn-primary btn-lg btn-block"><i class="fa-solid fa-circle-check"></i> {{ _lang('Submit Request') }}</button>
 							</div>
 						</div>
 					</div>

@@ -11,7 +11,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ $active_customer }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('users.filter') }}/active"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('users.filter') }}/active"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -27,7 +27,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ kyc_count(false) }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('users.documents') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('users.documents') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -43,7 +43,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ request_count('pending_tickets') }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('support_tickets.index',['status' => 'pending']) }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('support_tickets.index',['status' => 'pending']) }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -60,7 +60,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ request_count('deposit_requests') }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('deposit_requests.index') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('deposit_requests.index') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ request_count('withdraw_requests') }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('withdraw_requests.index') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('withdraw_requests.index') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -95,7 +95,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ request_count('pending_loans') }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('loans.index') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('loans.index') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -112,7 +112,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ request_count('fdr_requests') }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('fixed_deposits.index') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('fixed_deposits.index') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -130,7 +130,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ request_count('wire_transfer_requests') }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('transfer_requests.index') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('transfer_requests.index') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>

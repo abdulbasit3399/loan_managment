@@ -41,7 +41,7 @@
 
 						<div class="col-md-12">
 							<div class="form-group">
-								<button type="submit" class="btn btn-primary btn-lg mt-2"><i class="icofont-check-circled"></i> {{ _lang('Save Changes') }}</button>
+								<button type="submit" class="btn btn-primary btn-lg mt-2"><i class="fa-solid fa-circle-check"></i> {{ _lang('Save Changes') }}</button>
 							</div>
 						</div>
 					</div>

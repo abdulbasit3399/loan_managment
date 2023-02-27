@@ -7,7 +7,7 @@
 		<div class="card no-export">
 		    <div class="card-header d-flex align-items-center">
 				<span class="panel-title">{{ _lang('Teams') }}</span>
-				<a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Add Team Member') }}" href="{{ route('teams.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Add Team Member') }}" href="{{ route('teams.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="teams_table" class="table table-bordered data-table">
@@ -36,8 +36,8 @@
 									<input name="_method" type="hidden" value="DELETE">
 
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('TeamController@edit', $team['id']) }}" data-title="{{ _lang('View Team') }}" class="dropdown-item dropdown-view ajax-modal"><i class="icofont-edit-alt"></i> {{ _lang('Edit') }}</a>
-										<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+										<a href="{{ action('TeamController@edit', $team['id']) }}" data-title="{{ _lang('View Team') }}" class="dropdown-item dropdown-view ajax-modal"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</div>
 								  </form>
 								</span>

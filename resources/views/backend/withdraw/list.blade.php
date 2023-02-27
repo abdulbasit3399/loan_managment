@@ -7,7 +7,7 @@
 		<div class="card no-export">
 		    <div class="card-header d-flex align-items-center">
 				<span class="panel-title">{{ _lang('Withdraw History') }}</span>
-				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('deposits.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('deposits.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="deposits_table" class="table table-bordered">

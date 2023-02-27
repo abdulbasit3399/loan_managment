@@ -7,7 +7,7 @@
 		<div class="card no-export">
 		    <div class="card-header">
 				<span class="panel-title">{{ _lang('All Branch') }}</span>
-				<a class="btn btn-primary btn-sm float-right ajax-modal" data-title="{{ _lang('Add New Branch') }}" href="{{ route('branches.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm float-right ajax-modal" data-title="{{ _lang('Add New Branch') }}" href="{{ route('branches.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="branches_table" class="table table-bordered data-table">
@@ -36,9 +36,9 @@
 									<input name="_method" type="hidden" value="DELETE">
 
 									<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-										<a href="{{ action('BranchController@edit', $branch['id']) }}" data-title="{{ _lang('Update Branch') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="icofont-ui-edit"></i> {{ _lang('Edit') }}</a>
-										<a href="{{ action('BranchController@show', $branch['id']) }}" data-title="{{ _lang('Branch Details') }}" class="dropdown-item dropdown-view ajax-modal"><i class="icofont-eye-alt"></i> {{ _lang('View') }}</a>
-										<button class="btn-remove dropdown-item" type="submit"><i class="icofont-trash"></i> {{ _lang('Delete') }}</button>
+										<a href="{{ action('BranchController@edit', $branch['id']) }}" data-title="{{ _lang('Update Branch') }}" class="dropdown-item dropdown-edit ajax-modal"><i class="fa-solid fa-pen-to-square"></i> {{ _lang('Edit') }}</a>
+										<a href="{{ action('BranchController@show', $branch['id']) }}" data-title="{{ _lang('Branch Details') }}" class="dropdown-item dropdown-view ajax-modal"><i class="fa-solid fa-eye"></i> {{ _lang('View') }}</a>
+										<button class="btn-remove dropdown-item" type="submit"><i class="fa-solid fa-trash"></i> {{ _lang('Delete') }}</button>
 									</div>
 								  </form>
 								</span>

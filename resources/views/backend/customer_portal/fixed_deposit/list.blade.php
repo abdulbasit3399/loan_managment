@@ -7,7 +7,7 @@
 		<div class="card no-export">
 		    <div class="card-header d-flex align-items-center">
 				<span class="panel-title">{{ _lang('Fixed Deposits') }}</span>
-				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('fixed_deposits.apply') }}"><i class="icofont-plus-circle"></i> {{ _lang('Apply New') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto" href="{{ route('fixed_deposits.apply') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Apply New') }}</a>
 			</div>
 			<div class="card-body">
 				<table id="fdr_table" class="table table-bordered data-table">

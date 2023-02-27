@@ -8,7 +8,7 @@
 		    <div class="card-header d-flex align-items-center">
 				<span class="panel-title">{{ $title }}</span>
 				@if(has_permission('support_tickets.create'))
-				<a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Create New Ticket') }}" href="{{ route('support_tickets.create') }}"><i class="icofont-plus-circle"></i> {{ _lang('Add New') }}</a>
+				<a class="btn btn-primary btn-sm ml-auto ajax-modal" data-title="{{ _lang('Create New Ticket') }}" href="{{ route('support_tickets.create') }}"><i class="fa-solid fa-circle-plus"></i> {{ _lang('Add New') }}</a>
 				@endif
 			</div>
 			<div class="card-body">

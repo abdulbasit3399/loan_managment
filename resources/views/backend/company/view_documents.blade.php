@@ -14,11 +14,11 @@
 				<div class="ml-auto">
 					@if($user->document_verified_at == null)
 						<div class="btn-group" role="group">
-							<a href="{{ route('users.documents.varify', $user->id) }}" class="btn btn-success btn-sm float-right"><i class="icofont-check-circled"></i> {{ _lang('Approve') }}</a>
-							<a href="{{ route('users.documents.unvarify', $user->id) }}" class="btn btn-danger btn-sm float-right"><i class="icofont-check-circled"></i> {{ _lang('Reject') }}</a>
+							<a href="{{ route('users.documents.varify', $user->id) }}" class="btn btn-success btn-sm float-right"><i class="fa-solid fa-circle-check"></i> {{ _lang('Approve') }}</a>
+							<a href="{{ route('users.documents.unvarify', $user->id) }}" class="btn btn-danger btn-sm float-right"><i class="fa-solid fa-circle-check"></i> {{ _lang('Reject') }}</a>
 						</div>
 					@else
-						<a href="{{ route('users.documents.unvarify', $user->id) }}" class="btn btn-danger btn-sm float-right"><i class="icofont-close-circled"></i> {{ _lang('Click to Unverify') }}</a>
+						<a href="{{ route('users.documents.unvarify', $user->id) }}" class="btn btn-danger btn-sm float-right"><i class="fa-solid fa-circle-xmark"></i> {{ _lang('Click to Unverify') }}</a>
 					@endif	
 				</div>
             </div>

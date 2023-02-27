@@ -59,7 +59,7 @@
 							</div>
 
 							<div class="col-md-2">
-								<button type="submit" class="btn btn-light btn-sm btn-block mt-26"><i class="icofont-filter"></i> {{ _lang('Filter') }}</button>
+								<button type="submit" class="btn btn-light btn-sm btn-block mt-26"><i class="fa-solid fa-filter"></i> {{ _lang('Filter') }}</button>
 							</div>
 						</form>
 

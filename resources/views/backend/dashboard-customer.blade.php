@@ -38,7 +38,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ $loans->count() }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('loans.my_loans') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('loans.my_loans') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -54,7 +54,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ $payment_request }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('payment_requests.index') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('payment_requests.index') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -71,7 +71,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ $active_fdr }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('fixed_deposits.history') }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('fixed_deposits.history') }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
@@ -88,7 +88,7 @@
 							<h6 class="pt-1 mb-0"><b>{{ $active_tickets }}</b></h6>
 						</div>
 						<div>
-							<a href="{{ route('tickets.my_tickets',['status' => 'active']) }}"><i class="icofont-arrow-right"></i>{{ _lang('View') }}</a>
+							<a href="{{ route('tickets.my_tickets',['status' => 'active']) }}"><i class="fa-solid fa-arrow-right"></i>{{ _lang('View') }}</a>
 						</div>
 					</div>
 				</div>
